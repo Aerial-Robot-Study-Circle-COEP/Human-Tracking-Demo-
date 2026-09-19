@@ -1,0 +1,87 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone GCS </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Drone Command Center</h1>
+
+  <div class="container">
+    <div class="drone-section">
+      <div class="header-row">
+        <h2>SCANNING UNIT</h2>
+        <button onclick="tryconnect('scan')">CONNECT SYSTEM</button>
+      </div>
+
+      <div class="telemetry-grid">
+        <p>Status: <span class="status">OFFLINE</span></p>
+        <p>Mode: <span class="mode">N/A</span></p>
+        <p>Altitude: <span class="altitude">0.0m</span></p>
+        <p>Speed: <span class="groundspeed">0.0m/s</span></p>
+        <p>Lat: <span class="lat">0.000</span></p>
+        <p>Lon: <span class="lon">0.000</span></p>
+        <p>Lidar: <span class="lidar">0cm</span></p>
+      </div>
+      <br>
+      <div class="action-bar">
+        <button class="btn-outline" onclick="updateDronePosition('scan')">Sync Position</button>
+        <button class="btn-outline" onclick="exportDetections('scan',event)">Export Detections to GCS</button>
+        <button class="btn-special" onclick="generateOptimizedMission(event)">Generate Mission for delivery drone</button>
+      </div>
+
+      <div id="scan_map" class="map"></div>
+
+      <section class="controls">
+        <h3>Manual Flight Control</h3>
+        <div>
+          <input type="number" id="scan_throttleInput" placeholder="Throttle (µs)">
+          <button onclick="sendThrottle('scan')">Set</button>
+          <button onclick="sendThrottle('scan', true)">Emergency Kill</button>
+        </div>
+        <div>
+          <button onclick="sendCommand('scan','arm')">ARM</button>
+          <button onclick="sendCommand('scan','disarm')">DISARM</button>
+          <input type="number" id="scan_takeoff_height" placeholder="Alt (m)" style="width:70px">
+          <button onclick="sendTakeoff('scan')">TAKEOFF</button>
+        </div>
+
+        <h3>Flight Modes</h3>
+        <div>
+          <button onclick="sendCommand('scan','rtl')">RTL</button>
+          <button onclick="sendCommand('scan','stabilize')">STAB</button>
+          <button onclick="sendCommand('scan','guided')">GUIDED</button>
+          <button onclick="sendCommand('scan','auto')">AUTO</button>
+        </div>
+      </section>
+
+      <section class="mission-box">
+        <h3>Mission Planning</h3>
+        <input type="file" id="scankml_fileInput">
+        <div style="margin-top:10px;">
+          <button onclick="lawnmower('scan')">Lawnmower</button>
+          <button onclick="generateMissionFromKML('scan')">KML to Mission</button>
+        </div>
+       
+        <div class="file-upload-zone">
+            <input type="file" id="scan_fileInput">
+            <button onclick="uploadMission('scan')">Upload to pixhawk</button>
+            <button onclick="startMission('scan')">Launch Mission</button>
+        </div>
+      </section>
+       <br>
+      <h3>Video</h3>
+      <video id="v" width="1200" height="700" autoplay muted playsinline></video>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
