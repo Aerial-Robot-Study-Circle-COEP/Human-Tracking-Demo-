@@ -100,29 +100,6 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 └── README.md
 ```
 
-*(Update this to match your actual folder layout.)*
-
----
-
-## Getting Started
-
-```bash
-# Clone the repo
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-# Set up the simulation environment (ROS 2 Jazzy + Gazebo Harmonic)
-source /opt/ros/jazzy/setup.bash
-colcon build
-source install/setup.bash
-
-# Launch the simulated mission
-ros2 launch simulation sar_mission.launch.py
-```
-
-*(Replace with your actual setup/build/run commands once finalized.)*
-
----
 
 ## Demo
 
