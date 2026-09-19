@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛰️ AI-Powered Search & Rescue Drone Swarm
+# AI-Powered Search & Rescue Drone Swarm
 
 **Smart India Hackathon 2026 · Problem Statement ID: 26177 · Qualcomm Inc.**
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📜 Problem Statement
+## Problem Statement
 
 > *"A deployable AI-powered autonomous drone that aids search-and-rescue operations by detecting people and hazards, thereby improving responder safety and reducing victim discovery time."*
 
@@ -21,7 +21,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Disaster sites are dangerous to search on foot and slow to search manually. This project deploys a **swarm of autonomous drones** that fly a coverage pattern over a search area, detect **people and hazards** in real time using onboard AI, geo-tag every detection, and stream a **live, risk-scored map** to a ground dashboard — so responders know exactly where to go and what to avoid before they set foot on site.
 
@@ -32,18 +32,18 @@ Disaster sites are dangerous to search on foot and slow to search manually. This
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🛸 **Swarm-ready** — scales from 1 drone to N without architecture changes
-- 🌡️ **RGB + thermal fusion** — detects people through smoke, darkness, and light debris
-- 🎯 **On-edge AI detection** — YOLO-based detection for both people and hazard classes
-- 📍 **Precision geo-tagging** — reverse transform matrix converts pixel detections to GPS coordinates using drone altitude, attitude, and camera calibration
-- 🗺️ **Dynamic coverage planning** — re-tasks drones live as new detections come in, instead of a fixed flight plan
-- 📡 **Live ops dashboard** — real-time multi-drone map for responders, not a batch report
+- **Swarm-ready** — scales from 1 drone to N without architecture changes
+- **RGB + thermal fusion** — detects people through smoke, darkness, and light debris
+- **On-edge AI detection** — YOLO-based detection for both people and hazard classes
+- **Precision geo-tagging** — reverse transform matrix converts pixel detections to GPS coordinates using drone altitude, attitude, and camera calibration
+- **Dynamic coverage planning** — re-tasks drones live as new detections come in, instead of a fixed flight plan
+- **Live ops dashboard** — real-time multi-drone map for responders, not a batch report
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
@@ -62,7 +62,7 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
                               SAR Ops Server (live map)
 ```
 
-> 📌 Replace this section with the exported architecture diagrams — add them to `assets/architecture/` and embed below:
+> Replace this section with the exported architecture diagrams — add them to `assets/architecture/` and embed below:
 > ```markdown
 > ![System Architecture](assets/architecture/full-pipeline.png)
 > ![Per-Drone Pipeline](assets/architecture/per-drone-pipeline.png)
@@ -70,7 +70,7 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -85,7 +85,7 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -104,7 +104,7 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ```bash
 # Clone the repo
@@ -124,7 +124,7 @@ ros2 launch simulation sar_mission.launch.py
 
 ---
 
-## 🎥 Demo
+## Demo
 
 ### Videos
 
@@ -153,7 +153,7 @@ copy the generated link, and paste it below — it will render inline.
 
 ---
 
-## ✅ How This Solves PS 26177
+## How This Solves PS 26177
 
 | Requirement | Our Solution |
 |---|---|
@@ -165,7 +165,7 @@ copy the generated link, and paste it below — it will render inline.
 
 ---
 
-## 👥 Team
+## Team
 
 | Name | Role |
 |---|---|
@@ -177,7 +177,7 @@ copy the generated link, and paste it below — it will render inline.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Smart India Hackathon 2026
 - Qualcomm Inc. — Problem Statement 26177
