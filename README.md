@@ -123,7 +123,7 @@ copy the generated link, and paste it below — it will render inline.
 <p align="center">
   <img src="assets/photos/drone-hardware.jpg" width="30%" alt="Drone hardware" />
   <img src="assets/photos/field-test.jpg" width="30%" alt="Field test" />
-  <img src="assets/photos/dashboard.jpg" width="30%" alt="SAR ops dashboard" />
+  <img src="assets/photos/dashboard.jpg" alt="SAR ops dashboard" />
 </p>
 
 *(Add your images to `assets/photos/` and update the filenames/captions above.)*
