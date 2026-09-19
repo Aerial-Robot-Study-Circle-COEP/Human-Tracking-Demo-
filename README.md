@@ -91,7 +91,6 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 ├── models/
 │   ├── assemblies/      # Drone Assembly
 │   ├── parts/           # Drone Parts
-├── planner/             # Coverage path planning & dynamic re-tasking
 ├── GCS_files/           # SAR ops dashboard
 │   ├── static/          # Static Files
 │   ├── templates/       # Template files
@@ -124,8 +123,8 @@ copy the generated link, and paste it below — it will render inline.
 ### Photos
 
 <p align="center">
-  <img src="assets/photos/drone-hardware.jpg" alt="Drone hardware" />
-  <img src="assets/photos/field-test.jpg" alt="Field test" />
+  <img src="assets/photos/drone_frame_render.png" alt="Drone hardware" />
+  <img src="assets/photos/result3.jpeg" alt="Field test" />
   <img src="assets/photos/dashboard.jpg" alt="SAR ops dashboard" />
 </p>
 
