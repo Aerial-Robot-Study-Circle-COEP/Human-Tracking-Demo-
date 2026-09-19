@@ -62,12 +62,6 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
                               SAR Ops Server (live map)
 ```
 
-> Replace this section with the exported architecture diagrams — add them to `assets/architecture/` and embed below:
-> ```markdown
-> ![System Architecture](assets/architecture/full-pipeline.png)
-> ![Per-Drone Pipeline](assets/architecture/per-drone-pipeline.png)
-> ```
-
 ---
 
 ## Tech Stack
