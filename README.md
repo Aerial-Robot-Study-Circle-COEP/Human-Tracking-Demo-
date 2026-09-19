@@ -75,12 +75,12 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 | Layer | Technology |
 |---|---|
 | **Flight compute** | Jetson Orin Nano |
-| **Flight controller / firmware** | ArduPilot |
-| **AI detection** | YOLO (people + hazard classes) |
+| **Flight controller / firmware** | Pixhawk Orange Cube + ArduPilot |
+| **AI detection** | YOLO-V8 (people + hazard classes) |
 | **Sensors** | RGB camera + thermal camera, GPS/IMU |
-| **Middleware / comms** | ROS 2 (Jazzy), MAVLink |
-| **Simulation & testing** | Gazebo (Harmonic), ArduPilot SITL, slam_toolbox |
-| **Ground software** | Field Ops Server, SAR Ops Server (live dashboard) |
+| **Middleware / comms** | MAVLink |
+| **Simulation & testing** | ArduPilot SITL, OpenCV |
+| **Ground software** | Flask Based Field Ops Server, SAR Ops Server (live dashboard) |
 | **Data format** | CSV / waypoint files, geo-tagged detections |
 
 ---
