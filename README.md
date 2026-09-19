@@ -99,20 +99,6 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 
 ## Demo
 
-### Videos
-
-<!--
-GitHub renders video previews only for files uploaded through its own
-drag-and-drop uploader (in an issue/PR/release), which generates a
-githubusercontent.com link. Drop your .mp4 into a new issue comment,
-copy the generated link, and paste it below — it will render inline.
--->
-
-| Demo | Description |
-|---|---|
-| _[Add video link here]_ | Full mission run — takeoff to live map |
-| _[Add video link here]_ | Hazard detection close-up |
-| _[Add video link here]_ | Multi-drone coverage re-tasking |
 
 ### Photos
 
