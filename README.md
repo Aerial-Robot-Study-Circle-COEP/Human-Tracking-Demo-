@@ -169,9 +169,12 @@ copy the generated link, and paste it below — it will render inline.
 
 | Name | Role |
 |---|---|
-| _Add name_ | _Add role_ |
-| _Add name_ | _Add role_ |
-| _Add name_ | _Add role_ |
+| Krishna Khilare | Team Captain |
+| Shreyash Kadam | Vice Captain |
+| Vishnu Waghmare | Team Member |
+| Devansh Dwivedi | Team Member |
+| Abhinav Kumbhar | Team Member |
+| Vinisha Mudaliar | Team Member |
 
 **Institution:** COEP Technological University, Pune
 
