@@ -128,8 +128,6 @@ copy the generated link, and paste it below — it will render inline.
   <img src="assets/photos/dashboard.jpg" alt="SAR ops dashboard" />
 </p>
 
-*(Add your images to `assets/photos/` and update the filenames/captions above.)*
-
 ---
 
 ## How This Solves PS 26177
