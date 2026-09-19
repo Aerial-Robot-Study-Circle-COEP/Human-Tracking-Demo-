@@ -88,11 +88,14 @@ Field Ops Server → Drone Swarm → Camera (RGB + Thermal)
 ## Repository Structure
 
 ```
-.
-├── drone/               # Onboard code — camera capture, YOLO inference, geo-tagging
+├── models/
+│   ├── assemblies/      # Drone Assembly
+│   ├── parts/           # Drone Parts
 ├── planner/             # Coverage path planning & dynamic re-tasking
-├── ground-station/      # Field ops server + SAR ops dashboard
-├── simulation/          # ROS2/Gazebo/ArduPilot SITL test environment
+├── GCS_files/           # SAR ops dashboard
+│   ├── static/          # Static Files
+│   ├── templates/       # Template files
+│   └── main.py          # Flask Launcher
 ├── assets/
 │   ├── architecture/    # Architecture diagrams
 │   ├── photos/          # Hardware & field test photos
